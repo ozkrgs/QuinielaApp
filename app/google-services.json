@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "307325632248",
+    "firebase_url": "https://quinielaapp-5a0bf.firebaseio.com",
+    "project_id": "quinielaapp-5a0bf",
+    "storage_bucket": "quinielaapp-5a0bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307325632248:android:6631430b63088594",
+        "android_client_info": {
+          "package_name": "com.example.oscar.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307325632248-kpg6lps1lpm47id0pn5qq0n5uuqhd544.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oscar.myapplication",
+            "certificate_hash": "a388b11ba2f0297d86d42f166ad03f58b4472255"
+          }
+        },
+        {
+          "client_id": "307325632248-5c4ti4oej82vevek8d2646nnbvbft5gg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUIbLxPnFHUlmZyYgV3601TY5i1OweFl0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307325632248-5c4ti4oej82vevek8d2646nnbvbft5gg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
