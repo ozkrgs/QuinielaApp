@@ -19,8 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true">
+        </activity>
     </application>
 
 </manifest>

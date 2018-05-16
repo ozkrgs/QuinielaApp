@@ -42,25 +42,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String password = editTextPassword.getText().toString().trim();
 
         if (email.isEmpty()) {
-            editTextEmail.setError("Email is required");
+            editTextEmail.setError("El correo es requerido");
             editTextEmail.requestFocus();
             return;
         }
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editTextEmail.setError("Please enter a valid email");
+            editTextEmail.setError("Ingrese un correo valido");
             editTextEmail.requestFocus();
             return;
         }
 
         if (password.isEmpty()) {
-            editTextPassword.setError("Password is required");
+            editTextPassword.setError("La contraseña es requerida");
             editTextPassword.requestFocus();
             return;
         }
 
-        if (password.length() < 6) {
-            editTextPassword.setError("Minimum lenght of password should be 6");
+        if (password.length() < 3) {
+            editTextPassword.setError("La contraseña debe contener almenos 3 caracteres");
             editTextPassword.requestFocus();
             return;
         }
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (mAuth.getCurrentUser() != null) {
             finish();
-            startActivity(new Intent(this, ProfileActivity.class));
+            startActivity(new Intent(this,DashboardActivity.class));
         }
     }
 

@@ -104,9 +104,9 @@ public class ProfileActivity extends AppCompatActivity {
             }
 
             if (user.isEmailVerified()) {
-                textView.setText("Email Verified");
+                textView.setText("Correo verificado");
             } else {
-                textView.setText("Email Not Verified (Click to Verify)");
+                textView.setText("Correo no verificado (Click para verificar)");
                 textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -129,7 +129,7 @@ public class ProfileActivity extends AppCompatActivity {
         String displayName = editText.getText().toString();
 
         if (displayName.isEmpty()) {
-            editText.setError("Name required");
+            editText.setError("El nombre es requerido");
             editText.requestFocus();
             return;
         }
@@ -147,7 +147,7 @@ public class ProfileActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(ProfileActivity.this, "Profile Updated", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ProfileActivity.this, "Perfil Actualizado", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -225,7 +225,13 @@ public class ProfileActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select Profile Image"), CHOOSE_IMAGE);
+        startActivityForResult(Intent.createChooser(intent, "Seleccione la imagen de perfil"), CHOOSE_IMAGE);
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, DashboardActivity.class));
+    }
+
 
 }
